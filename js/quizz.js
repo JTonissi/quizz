@@ -84,7 +84,9 @@ form.addEventListener("submit", function(event){
                 note += 1;
         }
     }
-    console.log(note);
+    let n = note*20/nombredequestion
+localStorage.setItem('note', n);
+window.location.href="result.html"
 });
 
 // fonction = function fullname(){}
